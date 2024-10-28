@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Houseware</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+      <nav class="navbar" data-navbar>
+  
+        <ul class="navbar-list">
+  
+          <li>
+            <a href="index.html" class="navbar-link">Trang chủ</a>
+          </li>
+  
+          <li>
+            <a href="about.html" class="navbar-link">Về chúng tôi</a>
+          </li>
+  
+          <li>
+            <a href="product.html" class="navbar-link">Sản phẩm</a>
+          </li>
+  
+          <li>
+            <a href="#" class="navbar-link">Liên hệ</a>
+          </li>
+  
+          <li>
+            <a href="login.html" class="navbar-link">Đăng nhập</a>
+          </li>
+  
+          <li>
+            <a href="register.html" class="navbar-link">Đăng ký</a>
+          </li>
+  
+        </ul>
+  
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">nguyenquoccuongm@gmail.com</a>
+  
+          <a href="tel:001234567890" class="contact-link">0377313265</a>
+        </div>
+  
+        <ul class="social-list">
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+  
+        </ul>
+  
+      </nav>
+  
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+  
+      <div class="overlay" data-nav-toggler data-overlay></div>
+  
+    </div>
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" data-modal="loginModal">&times;</span>
+    <h2>Đăng nhập</h2>
+    <form action="#" method="POST">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="loginEmail" required>
+      <label for="loginPassword">Mật khẩu:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required>
+      <button type="submit">Đăng nhập</button>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" data-modal="registerModal">&times;</span>
+    <h2>Đăng ký</h2>
+    <form action="#" method="POST">
+      <label for="registerEmail">Email:</label>
+      <input type="email" id="registerEmail" name="registerEmail" required>
+      <label for="registerPassword">Mật khẩu:</label>
+      <input type="password" id="registerPassword" name="registerPassword" required>
+      <button type="submit">Đăng ký</button>
+    </form>
+  </div>
+</div>
+  </header>
+  
+  <main>
+    <article>
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">NƠI MUA BÁN ĐỒ GIA DỤNG RẺ NHẤT VIỆT NAM</h1>
+
+            <p class="hero-text">
+              Chuyên cung cấp các món đồ tốt nhất thị trường.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">KHÁM PHÁ</a>
+
+              <a href="#" class="btn btn-outline">LIÊN HỆ</a>
+
+            </div>
+
+          </div>
+          
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="https://images.pexels.com/photos/6271466/pexels-photo-6271466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="https://images.pexels.com/photos/7221112/pexels-photo-7221112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">DỊCH VỤ</p>
+
+          <h2 class="h2 section-title">
+            Dịch vụ chúng tôi cung cấp được yêu cầu đặc biệt để đáp ứng nhu cầu của bạn.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Hỗ trợ 24/7</h3>
+
+                <p class="card-text">
+                  Hỗ trợ mọi thời điểm bạn cần
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Xem thêm</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Thanh toán an toàn</h3>
+
+                <p class="card-text">
+                  Thanh toán không cần tiền mặt
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Xem thêm</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Cập nhật hằng ngày</h3>
+
+                <p class="card-text">
+                  Đảm bảo sản phẩm mới nhất tới với khách hàng
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Xem thêm</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Giá rẻ nhất</h3>
+
+                <p class="card-text">
+                  Cung cấp sản phẩm rẻ nhất thị trường
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Xem thêm</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="https://cdn.tgdd.vn/Products/Images/1943/320503/Slider/tu-lanh-hitachi-inverter-464-lit-multi-door-hr4n7520dswdxvn638402346242192652.jpg" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">SẢN PHẨM BÁN CHẠY NHẤT</p>
+
+            <h2 class="h2 section-title">
+              Tủ lạnh PANASONIC
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Thông số</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                        Multi Door - 4 cánh
+                        <br>
+                        Dung tích sử dụng 
+                        464 lít - 4 - 5 người
+                        <br>
+                        Dung tích tổng
+                        464 lít
+                        <br>
+                        Dung tích ngăn đá
+                        175 lít
+                        <br>
+                        Dung tích ngăn lạnh
+                        289 lít
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Năm ra mắt</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    2023
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Giá bán</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    23.000.000 VNĐ
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_24381/may-giat-toshib_main_35_1020.png.webp" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">SẢN PHẨM ƯU ĐÃI NHẤT</p>
+
+            <h2 class="h2 section-title">
+              Máy giặt TOSHIBA
+            </h2>
+
+            <p class="section-text">
+              Máy Giặt Toshiba Inverter 8.5 Kg TW-BK95S3V (SK) - Hiệu suất vượt trội, tích hợp sẵn đa dạng chương trình giặt.
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Sản phẩm tốt nhất 10 năm trở lại đây.
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Giảm giá 50% trực tiếp trên sản phẩm
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Được nhiều người tin dùng
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Giá thành rẻ nhất thị trường
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">7518</span>
+
+                <spna class="span">ĐÃ BÁN</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">3472</span>
+
+                <spna class="span">ĐÁNH GIÁ TỐT</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">2184</span>
+
+                <spna class="span">SẢN PHẨM MỚI</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">4523</span>
+
+                <spna class="span">GIẢI THƯỞNG</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">SẢN PHẨM MỚI</p>
+
+          <h2 class="h2 section-title">
+            CÁC SẢN PHẨM MỚI ĐƯỢC CÔNG TY RA MẮT VÀ ĐÃ QUA KIỂM DUYỆT
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_32684/android-tivi-it_main_295_1020.png.webp" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Android Tivi ITEL 55 Inch 4K G5557</a>
+                  </h3>
+
+                  <p class="card-text">
+                    TIVI NÉT NHẤT HỆ MẶT TRỜI MÀ CÒN ĐƯỢC GIẢM GIÁ
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">24 - 01 - 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text"><a href="#">Xem sản phẩm</a></span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_32684/android-tivi-it_main_295_1020.png.webp" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Android Tivi ITEL 55 Inch 4K G5557</a>
+                  </h3>
+
+                  <p class="card-text">
+                    TIVI NÉT NHẤT HỆ MẶT TRỜI MÀ CÒN ĐƯỢC GIẢM GIÁ
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">24 - 01 - 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text"><a href="#">Xem sản phẩm</a></span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture//Apro/Apro_product_32684/android-tivi-it_main_295_1020.png.webp" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Android Tivi ITEL 55 Inch 4K G5557</a>
+                  </h3>
+
+                  <p class="card-text">
+                    TIVI NÉT NHẤT HỆ MẶT TRỜI MÀ CÒN ĐƯỢC GIẢM GIÁ
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">24 - 01 - 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text"><a href="#">Xem sản phẩm</a></span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            ĐĂNG KÝ THÀNH VIÊN ĐỂ CẬP NHẬT ĐƯỢC CÁC MẶT HÀNG OKE NHẤT
+          </h2>
+
+          <a href="#" class="btn btn-primary">Đăng ký ngay</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          ĐỒ GIA DỤNG
+        </a>
+
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Địa chỉ</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Tổ 2, Tân Thịnh, Thái Nguyên
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">phamtuan@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">0866180256</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Xem thêm</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Về chúng tôi</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Điều khoản và bảo mật</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Sản phẩm</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Tư vấn</p>
+
+        <p class="footer-text">
+          Để lại thông tin của bạn để được tư vấn và hỗ trợ.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Gửi</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

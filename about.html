@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Houseware</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+      <nav class="navbar" data-navbar>
+  
+        <ul class="navbar-list">
+  
+          <li>
+            <a href="index.html" class="navbar-link">Trang chủ</a>
+          </li>
+  
+          <li>
+            <a href="about.html" class="navbar-link">Về chúng tôi</a>
+          </li>
+  
+          <li>
+            <a href="product.html" class="navbar-link">Sản phẩm</a>
+          </li>
+  
+          <li>
+            <a href="#" class="navbar-link">Liên hệ</a>
+          </li>
+  
+          <li>
+            <a href="login.html" class="navbar-link">Đăng nhập</a>
+          </li>
+  
+          <li>
+            <a href="register.html" class="navbar-link">Đăng ký</a>
+          </li>
+  
+        </ul>
+  
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">nguyenquoccuongm@gmail.com</a>
+  
+          <a href="tel:001234567890" class="contact-link">0377313265</a>
+        </div>
+  
+        <ul class="social-list">
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+  
+        </ul>
+  
+      </nav>
+  
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+  
+      <div class="overlay" data-nav-toggler data-overlay></div>
+  
+    </div>
+    <!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" data-modal="loginModal">&times;</span>
+    <h2>Đăng nhập</h2>
+    <form action="#" method="POST">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="loginEmail" required>
+      <label for="loginPassword">Mật khẩu:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required>
+      <button type="submit">Đăng nhập</button>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" data-modal="registerModal">&times;</span>
+    <h2>Đăng ký</h2>
+    <form action="#" method="POST">
+      <label for="registerEmail">Email:</label>
+      <input type="email" id="registerEmail" name="registerEmail" required>
+      <label for="registerPassword">Mật khẩu:</label>
+      <input type="password" id="registerPassword" name="registerPassword" required>
+      <button type="submit">Đăng ký</button>
+    </form>
+  </div>
+</div>
+  </header>
+  <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">NƠI MUA BÁN ĐỒ GIA DỤNG RẺ NHẤT VIỆT NAM</h1>
+
+            <p class="hero-text">
+              Chuyên cung cấp các món đồ tốt nhất thị trường.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">KHÁM PHÁ</a>
+
+              <a href="#" class="btn btn-outline">LIÊN HỆ</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="https://images.pexels.com/photos/6271466/pexels-photo-6271466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="https://images.pexels.com/photos/7221112/pexels-photo-7221112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">THÔNG TIN LIÊN HỆ</p>
+
+          <h2 class="h2 section-title">
+            HỖ TRỢ KỊP THỜI NHANH CHÓNG
+          </h2>
+          <p>
+            Công ty ABC
+            <br>
+            Tổ 2, Tân Thịnh, Thái Nguyên
+            <br>
+            0866180256
+            <br>
+            phamtuan@gmail.com
+          </p>
+
+        </div>
+      </section>
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          ĐỒ GIA DỤNG
+        </a>
+
+       
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Địa chỉ</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Tổ 2, Tân Thịnh, Thái Nguyên
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">phamtuan@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">0866180256</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Xem thêm</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Về chúng tôi</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Điều khoản và bảo mật</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Sản phẩm</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Tư vấn</p>
+
+        <p class="footer-text">
+          Để lại thông tin của bạn để được tư vấn và hỗ trợ.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Gửi</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
